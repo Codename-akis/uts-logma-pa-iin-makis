@@ -1,0 +1,67 @@
+<html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalkulator Zakat </title>
+  <link rel="stylesheet" href="style_css.css" />
+</head>
+
+<div class="navbar">
+  <button id="menuButton">☰</button>
+  <ul id="menu" hidden>
+    <li>Emas</li>
+    <li>Pertanian</li>
+    <li>Penghasilan</li>
+  </ul>
+</div>
+
+<body>
+  <div class="container">
+    <h1>🕌Kalkulator Zakat 🕌</h1>
+
+    <form id="zakatForm">
+      <label for="harta">Total Harta Kamu Saat Ini (Rp):</label>
+      <input type="text" id="harta" placeholder="Masukkan total harta..." required />
+
+      <label for="hutang">Total Hutang Kamu Saat Ini (Rp):</label>
+      <input type="text" id="hutang" placeholder="Masukkan total hutang..." required />
+
+      <label for="hargaEmas">Harga Emas Per Gram (Rp):</label>
+      <input type="text" id="hargaEmas" value="2.153.129" required />
+
+      <button type="submit">Hitung Zakat</button>
+    </form>
+
+    <div id="hasil" class="hasil"></div>
+  </div>
+
+  <footer>
+    <p>NIM: 256512010</p>
+    <p>Nama: Moch Makis Lazuardi Ruslan</p>
+    <p>Semester:I (Satu)</p>
+    <p>Jurusan: Informatika</p>
+    <p>Dosen Pengampu: Iin, M.Kom </p>
+  </footer>
+  
+  <div class="hadist-box">
+  <h3>📖 Hadis Zakat</h3>
+  <p><em>
+    عَنْ ابْنِ عُمَرَ رَضِيَ اللَّهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللَّهِ ﷺ:
+"بُنِيَ الْإِسْلَامُ عَلَى خَمْسٍ: شَهَادَةِ أَنْ لَا إِلٰهَ إِلَّا اللَّهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ، وَإِقَامِ الصَّلَاةِ، وَإِيتَاءِ الزَّكَاةِ، وَالْحَجِّ، وَصَوْمِ رَمَضَانَ."
+
+(HR. Bukhari & Muslim)
+  </em></p>
+  <p><strong>Artinya:</strong> 
+    “Islam dibangun atas lima perkara: bersaksi bahwa tidak ada Tuhan selain Allah dan Muhammad adalah utusan Allah, mendirikan salat, menunaikan zakat, menunaikan ibadah haji, dan berpuasa di bulan Ramadan.”
+
+🕌 Hadis ini menjelaskan kalau zakat itu termasuk salah satu rukun Islam, jadi hukumnya wajib bagi umat Islam yang mampu.
+  </p>
+</div>
+
+<table class="result-tabel animated-tabel float"></table>
+
+  <script src="uts.js"></script>
+  <script src=""></script>
+</body>
+</html>
